@@ -365,7 +365,7 @@
   <project groups="device" name="vendor-broadcom-bt-fm" path="vendor/broadcom/bt-fm" remote="sony" revision="master"/>
   <project groups="device" name="vendor-broadcom-wlan" path="vendor/broadcom/wlan" remote="sony" revision="master"/>
   <project groups="device" name="vendor-nxp" path="vendor/nxp/" remote="sony" revision="master"/>
-  <project groups="device" name="vendor-oss-interfaces" path="vendor/oss/interfaces" remote="sony" revision="master"/>
+  <project groups="device" name="vendor-oss-interfaces" path="vendor/oss/interfaces" remote="sony" revision="p-mr1"/>
   <project groups="device" name="vendor-qcom-opensource-bluetooth" path="vendor/qcom/opensource/bluetooth" remote="sony" revision="master"/>
   <project groups="device" name="vendor-qcom-opensource-dataservices" path="vendor/qcom/opensource/dataservices" remote="sony" revision="master"/>
   <project groups="device" name="vendor-qcom-opensource-interfaces" path="vendor/qcom/opensource/interfaces" remote="sony" revision="aosp/LA.UM.7.3.r1">
@@ -375,7 +375,7 @@
   <project groups="device" name="vendor-sony-oss-cash" path="vendor/oss/cash" remote="sony" revision="master"/>
   <project groups="device" name="vendor-sony-oss-fingerprint" path="vendor/oss/fingerprint" remote="sony" revision="master"/>
   <project groups="device" name="vendor-sony-oss-projection" path="vendor/oss/projection" remote="sony" revision="master"/>
-  <project groups="device" name="vendor-sony-oss-simdetect" path="vendor/oss/simdetect" remote="sony" revision="master"/>
+  <project groups="device" name="vendor-sony-oss-simdetect" path="vendor/oss/simdetect" remote="sony" revision="p-mr1"/>
 
 
   <!-- Hybris repos -->
