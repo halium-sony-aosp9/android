@@ -5,6 +5,9 @@
   <remote fetch="https://github.com/relan/" name="relan"/>
   <remote fetch="https://github.com/sonyxperiadev/" name="sony"/>
   <remote fetch="https://github.com/mer-hybris" name="hybris"/>
+  <remote fetch="https://github.com/Halium" name="halium"/>
+  <remote fetch="https://github.com/sailfishos" name="sailfishos"/>
+  <remote fetch="https://github.com/ubports" name="ubports" />
   
   <default remote="aosp" revision="refs/tags/android-9.0.0_r46" sync-j="24"/>
   
@@ -374,6 +377,22 @@
   <project groups="device" name="vendor-sony-oss-projection" path="vendor/oss/projection" remote="sony" revision="master"/>
   <project groups="device" name="vendor-sony-oss-simdetect" path="vendor/oss/simdetect" remote="sony" revision="master"/>
 
+
+  <!-- Hybris repos -->
+  <project path="hybris-patches" name="hybris-patches" remote="halium" revision="halium-9.0" />
+  <project path="hybris/hybris-boot" name="hybris-boot" remote="hybris" revision="master" />
+  <project path="hybris/mer-kernel-check" name="mer-kernel-check" remote="hybris" revision="master" />
+  <project path="external/droidmedia" name="droidmedia" remote="sailfishos" revision="master" />
+  <project path="external/audioflingerglue" name="audioflingerglue" remote="hybris" revision="master" />
+  <project path="external/busybox" name="android_external_busybox_prebuilt" remote="hybris" revision="master" />
+  <project path="external/selinux_stubs" name="android_external_selinux_stubs" remote="hybris" revision="master" />
+  <project path="halium/biometryd" name="biometryd" remote="ubports" revision="xenial_-_edge_-_android8" />
+  <project path="halium/fake_crypt" name="fake_crypt" remote="halium" revision="master" />
+  <project path="halium/devices" name="halium-devices" remote="halium" revision="halium-9.0" />
+  <project path="halium/halium-boot" name="halium-boot" remote="halium" revision="halium-9.0" />
+  <project path="halium/libhybris" name="libhybris" remote="halium" revision="halium-9.0" />
+  <project path="halium/platform-api" name="platform-api" remote="ubports" revision="xenial_-_edge_-_android8"  />
+  <project path="halium/stub_netd" name="stub_netd" remote="halium" revision="halium-9.0" />
   
   <repo-hooks enabled-list="pre-upload" in-project="platform/tools/repohooks"/>
 </manifest>
