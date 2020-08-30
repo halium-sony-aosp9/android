@@ -32,10 +32,10 @@
   <project groups="vts,pdk" name="kernel/configs"/>
   <project groups="device" name="macaddrsetup" path="vendor/oss/macaddrsetup" remote="sony" revision="master"/>
   <project groups="device" name="packages_apps_ExtendedSettings" path="packages/apps/ExtendedSettings" remote="sony" revision="p-mr1"/>
-  <project groups="pdk" name="platform/art" path="art"/>
-  <project groups="pdk" name="platform/bionic" path="bionic"/>
+  <project groups="pdk" name="android_art" path="art" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp"/>
+  <project groups="pdk" name="android_bionic" path="bionic" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp"/>
   <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery"/>
-  <project groups="pdk" name="platform/build" path="build/make">
+  <project groups="pdk" name="android_build" path="build/make" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
@@ -46,7 +46,7 @@
   </project>
   <project groups="pdk,tradefed" name="platform/build/blueprint" path="build/blueprint"/>
   <project groups="pdk,tradefed" name="platform/build/kati" path="build/kati"/>
-  <project groups="pdk,tradefed" name="platform/build/soong" path="build/soong">
+  <project groups="pdk,tradefed" name="android_build_soong" path="build/soong" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp">
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
@@ -276,14 +276,14 @@
   <project groups="pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"/>
   <project groups="pdk" name="platform/hardware/nxp/nfc" path="hardware/nxp/nfc"/>
   <project groups="pdk" name="platform/hardware/nxp/secure_element" path="hardware/nxp/secure_element"/>
-  <project groups="qcom,qcom_audio,pdk-qcom" name="platform/hardware/qcom/audio" path="hardware/qcom/audio"/>
-  <project groups="pdk-qcom" name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl"/>
-  <project groups="qcom,pdk-qcom" name="platform/hardware/qcom/bt" path="hardware/qcom/bt"/>
+  <project groups="qcom,qcom_audio,pdk-qcom" name="android_hardware_qcom_audio" path="hardware/qcom/audio" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp"/>
+  <project groups="pdk-qcom" name="android_hardware_qcom_bootctrl" path="hardware/qcom/bootctrl" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp"/>
+  <project groups="qcom,pdk-qcom" name="android_hardware_qcom_bt" path="hardware/qcom/bt" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp"/>
   <project groups="qcom_camera,pdk-qcom" name="platform/hardware/qcom/camera" path="hardware/qcom/camera"/>
   <project groups="qcom,pdk-qcom" name="platform/hardware/qcom/data/ipacfg-mgr" path="hardware/qcom/data/ipacfg-mgr"/>
-  <project groups="pdk-qcom,qcom,qcom_display" name="platform/hardware/qcom/display" path="hardware/qcom/display"/>
+  <project groups="pdk-qcom,qcom,qcom_display" name="android_hardware_qcom_display" path="hardware/qcom/display" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp"/>
   <project groups="qcom,qcom_keymaster,pdk-qcom" name="platform/hardware/qcom/keymaster" path="hardware/qcom/keymaster"/>
-  <project groups="qcom,pdk-qcom" name="platform/hardware/qcom/media" path="hardware/qcom/media"/>
+  <project groups="qcom,pdk-qcom" name="android_hardware_qcom_media" path="hardware/qcom/media" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp"/>
   <project groups="wahoo" name="platform/hardware/qcom/neuralnetworks/hvxservice" path="hardware/qcom/neuralnetworks/hvxservice"/>
   <project groups="qcom,pdk-qcom" name="platform/hardware/qcom/power" path="hardware/qcom/power"/>
   <project groups="vendor,qcom_sdm710" name="platform/hardware/qcom/sdm710/data/ipacfg-mgr" path="hardware/qcom/sdm710/data/ipacfg-mgr"/>
@@ -295,9 +295,9 @@
   <project groups="qcom_sdm710" name="platform/hardware/qcom/sdm710/media" path="hardware/qcom/sdm710/media"/>
   <project groups="qcom_sdm710" name="platform/hardware/qcom/sdm710/thermal" path="hardware/qcom/sdm710/thermal"/>
   <project groups="qcom_sdm710" name="platform/hardware/qcom/sdm710/vr" path="hardware/qcom/sdm710/vr"/>
-  <project groups="qcom_sdm845" name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" path="hardware/qcom/data/ipacfg-mgr/sdm845"/>
-  <project groups="qcom_sdm845" name="platform/hardware/qcom/sdm845/gps" path="hardware/qcom/gps"/>
-  <project groups="qcom_sdm845" name="platform/hardware/qcom/sdm845/media" path="hardware/qcom/media/sdm845"/>
+  <project groups="qcom_sdm845" name="android_hardware_qcom_sdm845_data_ipacfg-mgr" path="hardware/qcom/data/ipacfg-mgr/sdm845" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp"/>
+  <project groups="qcom_sdm845" name="android_hardware_qcom_sdm845_gps" path="hardware/qcom/gps" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp"/>
+  <project groups="qcom_sdm845" name="android_hardware_qcom_media_sdm845" path="hardware/qcom/media/sdm845" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp"/>
   <project groups="qcom_sdm845" name="platform/hardware/qcom/sdm845/vr" path="hardware/qcom/sdm845/vr"/>
   <project groups="qcom_wlan,pdk-qcom" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan"/>
   <project groups="pdk" name="platform/hardware/ril" path="hardware/ril"/>
@@ -386,7 +386,7 @@
 
 
   <!-- Hybris repos -->
-  <project path="hybris-patches" name="hybris-patches" remote="halium" revision="halium-9.0" />
+  <project path="hybris-patches" name="hybris-patches" remote="halium-sony-aosp9" revision="halium-9.0-sony-aosp" />
   <project path="hybris/hybris-boot" name="hybris-boot" remote="hybris" revision="master" />
   <project path="hybris/mer-kernel-check" name="mer-kernel-check" remote="hybris" revision="master" />
   <project path="external/droidmedia" name="droidmedia" remote="sailfishos" revision="master" />
